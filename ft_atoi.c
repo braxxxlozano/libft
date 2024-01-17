@@ -1,4 +1,16 @@
-#include <libft.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: blozano- <blozano-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/23 17:55:06 by blozano-          #+#    #+#             */
+/*   Updated: 2023/12/23 17:55:09 by blozano-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 // La función ft_atoi se utiliza para convertir una cadena de caracteres en un número entero.
 int ft_atoi(const char *str)

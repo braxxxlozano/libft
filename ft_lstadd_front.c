@@ -1,7 +1,7 @@
 #include <libft.h>
 
 // La función ft_lstadd_front añade el elemento 'new' al principio de la lista.
-void ft_lstadd_front(t_list **lst, t_list *new)
+void    ft_lstadd_front(t_list **lst, t_list *new)
 {
     // Si 'new' es NULL, no hacemos nada.
     if (!new)

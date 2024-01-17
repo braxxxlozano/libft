@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_ascii.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blozano- <blozano-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/22 13:34:32 by blozano-          #+#    #+#             */
-/*   Updated: 2023/12/22 13:37:35 by blozano-         ###   ########.fr       */
+/*   Created: 2023/12/22 11:31:13 by blozano-          #+#    #+#             */
+/*   Updated: 2023/12/22 11:41:27 by blozano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// La función ft_tolower se utiliza para convertir un carácter en mayúscula a minúscula.
-int	ft_tolower(int c)
+int	ft_isascii(int c)
 {
-    // Comprobamos si el carácter es una letra mayúscula.
-    // Si es así, lo convertimos a minúscula sumando 32 al carácter.
-    // Si no es una letra mayúscula, simplemente devolvemos el carácter tal como está.
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
 	else
-		return (c);
+		return (0);
 }
